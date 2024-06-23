@@ -56,9 +56,14 @@ p {
 /* Logo */
 .header-section {
   margin-top: 24px;
-  margin-bottom: 24px;
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .logo-containers {
+  margin-bottom: 24px;
   display: flex;
 }
 .logo-web-upper {
@@ -113,6 +118,13 @@ p {
 /* Banner */
 .banner-section {
   background: var(--navy-blue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.png);
+  margin: auto;
+  max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
