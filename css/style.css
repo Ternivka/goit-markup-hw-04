@@ -172,6 +172,17 @@ p {
 .feature-item:not(:last-child) {
   margin-right: 24px;
 }
+.feature-icon-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+  background: var(--cloud);
+  margin-bottom: 8px;
+}
 .feature-item-heading {
   line-height: 24px;
   font-size: 20px;
@@ -187,13 +198,15 @@ p {
 }
 /* Team */
 .team-section {
+  margin-top: 120px;
+
   background: var(--cloud);
-  margin-top: 240px;
 }
 .team-list {
   display: flex;
 }
 .team-heading {
+  padding-top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,6 +222,7 @@ p {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  margin-bottom: 120px;
 }
 .team-card:not(:last-child) {
   margin-right: 24px;
@@ -227,7 +241,21 @@ p {
   text-align: center;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-bottom: 8px;
+}
+.team-icon-container {
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 32px;
+}
+.team-icon-background {
+  width: 40px;
+  height: 40px;
+  background: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Portfolio */
 .portfolio-section {
@@ -273,6 +301,9 @@ p {
   background: var(--navy-blue);
   padding: 100px 0;
 }
+
+.footer-container {
+}
 .logo-web-lower {
   color: var(--iris);
   font-family: Raleway;
@@ -286,10 +317,35 @@ p {
 .logo-studio-lower {
   color: var(--cloud);
 }
-.footer-text {
+.footer-information {
   margin-top: 16px;
   color: var(--cloud);
   max-width: 264px;
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+.footer-paragraph {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.footer-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-icon-background {
+  width: 40px;
+  height: 40px;
+  background: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon-background:hover,
+.footer-icon-background:focus {
+  background-color: var(--green);
 }
